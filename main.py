@@ -37,13 +37,14 @@ else:
 #defines the variable outside of the loop so it doesnt keep resetting
 numberofwords = 0
 
+#while the loop is still active, ask user to input a word.
 while True:
 
     words = input("Please enter a word. Just type x if you want to see how many words you've written: ")
-
+#if the word isn't x, keep letting user input
     if words != "x":
         numberofwords = numberofwords + 1
-
+#if the word is x, tell the user how many words they've inputted and end the loop.
     else:
         print ("You've inputted" , numberofwords , "word(s).")
         break
